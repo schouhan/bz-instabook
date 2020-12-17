@@ -1,0 +1,21 @@
+<ion-header>
+	<ion-navbar color="danger">
+		<ion-title>Insta Book</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-card color="primary" *ngFor="let item of AddressBookList" (click)="OpenAddressBook('A')">
+		<ion-card-header>
+			<ion-card-title>
+				<ion-icon name="contacts"></ion-icon>
+				{{item.title}}
+			</ion-card-title>
+		</ion-card-header>
+
+		<ion-card-content>
+			{{item.descr}}
+		</ion-card-content>
+	</ion-card>
+
+</ion-content>
